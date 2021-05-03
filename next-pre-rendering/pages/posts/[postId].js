@@ -30,9 +30,7 @@ export async function getStaticPaths() {
     paths: [
       { params: { postId: '1' } },
       { params: { postId: '2' } },
-      { params: { postId: '3' } },
-      { params: { postId: '4' } },
-      { params: { postId: '5' } }
+      { params: { postId: '3' } }
     ],
     fallback: false
   }
