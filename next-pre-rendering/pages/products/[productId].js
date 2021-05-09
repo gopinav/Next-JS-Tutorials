@@ -25,12 +25,13 @@ export async function getStaticProps(context) {
     `http://localhost:4000/products/${params.productId}`
   )
   const data = await response.json()
-  console.log(`Generating page for /posts/${params.postId}`)
+  console.log(`Generating page for /products/${params.productId}`)
 
   return {
     props: {
       product: data
-    }
+    },
+    revalidate: 10
   }
 }
 

@@ -3,13 +3,13 @@
     {
       "id": 1,
       "title": "Product 1",
-      "price": 900,
+      "price": 700,
       "description": "Description 1"
     },
     {
       "id": 2,
       "title": "Product 2",
-      "price": 1000,
+      "price": 1050,
       "description": "Description 2"
     },
     {
