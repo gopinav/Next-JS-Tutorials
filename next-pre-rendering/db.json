@@ -38,5 +38,11 @@
       "description": "Description 3",
       "category": "sports"
     }
-  ]
+  ],
+  "dashboard": {
+    "posts": 5,
+    "likes": 100,
+    "followers": 20,
+    "following": 50
+  }
 }
