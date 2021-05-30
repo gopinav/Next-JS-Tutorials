@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import '../styles/globals.css'
-import '../styles/layout.css'
+import Footer from '@/layout/Footer'
+import Header from '@/layout/Header'
+import 'styles/globals.css'
+import 'styles/layout.css'
 
 function MyApp({ Component, pageProps }) {
   return (
