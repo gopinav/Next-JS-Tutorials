@@ -3,6 +3,7 @@ import { getSession, useSession } from 'next-auth/client'
 function Blog({ data }) {
   const [session] = useSession()
   console.log({ session })
+
   return <h1>Blog page - {data}</h1>
 }
 
@@ -13,9 +14,7 @@ export async function getServerSideProps(context) {
   if (!session) {
     return {
       redirect: {
-        destination: `/api/auth/signin?callbackUrl=${encodeURIComponent(
-          'http:localhost:3000/blog'
-        )}`,
+        destination: '/api/auth/signin?callbackUrl=http://localhost:3000/blog',
         permanent: false
       }
     }
