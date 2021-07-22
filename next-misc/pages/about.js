@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Footer from '../components/layout/Footer'
 
 function About() {
   return (
@@ -13,3 +14,10 @@ function About() {
 }
 
 export default About
+
+About.getLayout = page => (
+  <>
+    {page}
+    <Footer />
+  </>
+)
